@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1618ad3-404e-44d2-9f26-335dadb8e290" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/classes/config/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/classes/oozie-job-submitter-context.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/classes/org/rohit/oozie/jobSubmitter/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/classes/org/rohit/oozie/jobSubmitter/controllers/OozieController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/classes/org/rohit/oozie/jobSubmitter/models/OozieSubmitResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/classes/org/rohit/oozie/jobSubmitter/service/OozieService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/classes/org/rohit/oozie/jobSubmitter/service/impl/OozieServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/oozie-job-submitter-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/oozie-job-submitter-1.0-SNAPSHOT.jar.original" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/surefire-reports/TEST-org.rohit.oozie.jobSubmitter.SampleSpec.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oozie-job-submitter/target/test-classes/org/rohit/oozie/jobSubmitter/SampleSpec.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oozie-job-submitter/pom.xml" afterPath="$PROJECT_DIR$/oozie-job-submitter/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_20.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_20.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_20.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_20.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oozie-job-submitter/oozie-job-submitter.iml" afterPath="$PROJECT_DIR$/oozie-job-submitter/oozie-job-submitter.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="helpers.iws" />
@@ -721,6 +709,13 @@
       <option name="number" value="Default" />
       <updated>1429343614254</updated>
     </task>
+    <task id="LOCAL-00001" summary="Removing target folders">
+      <created>1429346494875</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1429346494875</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -754,6 +749,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removing target folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing target folders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
