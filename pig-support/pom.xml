@@ -9,7 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pig-script-runner</artifactId>
+    <artifactId>pig-support</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>pig-test</module>
+        <module>pig-udfs</module>
+    </modules>
 
     <dependencies>
         <dependency>

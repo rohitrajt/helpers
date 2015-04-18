@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>oozie-job-submitter</module>
-        <module>pig-script-runner</module>
+        <module>pig-support</module>
     </modules>
     <packaging>pom</packaging>
 
