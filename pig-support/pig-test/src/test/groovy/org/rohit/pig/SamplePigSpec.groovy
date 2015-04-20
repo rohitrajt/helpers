@@ -28,4 +28,13 @@ class SamplePigSpec extends Specification {
         then:
             test.assertOutput("data", input, "queries_limit", output)
     }
+
+    def "upper" () {
+        given:
+            String[] args = []
+        when:
+            PigTest test = new PigTest("src/test/resources/UPPER/upper.pig", args)
+        then:
+            test.assertOutput(new File("src/test/resources/UPPER/upper_names.txt"))
+    }
 }
