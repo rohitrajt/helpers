@@ -2,6 +2,7 @@ package org.rohit.pig.udfs;
 
 import org.apache.pig.EvalFunc;
 import org.apache.pig.data.Tuple;
+import org.apache.pig.impl.logicalLayer.schema.Schema;
 
 import java.io.IOException;
 
@@ -19,5 +20,10 @@ public class UPPER extends EvalFunc<String> {
         } catch (Exception e) {
             throw new IOException("Caught exception processing input row ", e);
         }
+    }
+
+    @Override
+    public Schema outputSchema(Schema input) {
+        return input;
     }
 }
