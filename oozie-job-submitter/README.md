@@ -34,7 +34,10 @@ Currently, submitting a oozie job is supported through Rest APIs.
   </property>
 ```
 
-* Invoke the REST API `/oozie/submit` with request method POST. 
+* Invoke the REST API `/oozie/submit` with request method POST. More details regarding this can be found in REST API section.
+* (Optional) If you want callbacks, you can use `/oozie/callback`. Currently this service only supports logging of callbacks.
+
+## REST APIs
 
 ### POST /oozie/submit
 
@@ -51,5 +54,10 @@ Currently, submitting a oozie job is supported through Rest APIs.
 * oozieUrl - The http/https url to your oozie cluster.
 * xmlFileLocation - The location of your configuration.xml which you want to invoke the workflow with.
 
-* (Optional) If you want callbacks, you can use `/oozie/callback`. Currently this service only supports logging of callbacks.
+### GET /oozie/callback?status=$status&jobId=$jobId
+
+#### Parameters
+* status(String) - The status of the oozie workflow. $status will be replaced with actual status by oozie internally while making the callback.
+* jobId(String) - The unique id identifying the oozie. $jobId will be replaced with actual job id by oozie internally while making the callback.
+
 
