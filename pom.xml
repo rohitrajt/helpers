@@ -25,6 +25,7 @@
         <slf4j.version>1.7.5</slf4j.version>
 
         <tomcat.version>7.0.59</tomcat.version>
+        <oozie.version>4.0.0-cdh5.0.1</oozie.version>
     </properties>
 
     <repositories>
@@ -90,6 +91,17 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Oozie -->
+            <dependency>
+                <groupId>org.apache.oozie</groupId>
+                <artifactId>oozie-client</artifactId>
+                <version>${oozie.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.oozie</groupId>
+                <artifactId>oozie-core</artifactId>
+                <version>${oozie.version}</version>
+            </dependency>
             <!--Pig Dependencies -->
             <dependency>
                 <groupId>org.apache.pig</groupId>
