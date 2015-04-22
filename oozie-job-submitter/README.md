@@ -29,7 +29,7 @@ java -jar oozie-job-submitter-1.0-SNAPSHOT.jar https://ip-dev15.xenre.vendavo.co
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-  <entry key="pricedata_job">DataServiceFileValidationJob_1002_190</entry>
+  <entry key="job">job</entry>
   <entry key="user.name">rohit</entry>
 <properties
 ```
