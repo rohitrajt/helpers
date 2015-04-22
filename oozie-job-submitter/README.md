@@ -2,19 +2,19 @@
 This module helps to submit oozie jobs to any specified oozie cluster. It also has support to listen to callbacks from oozie and logs the status of the submitted oozie jobs.
 
 ## Steps to run
-1. Build the project with the following command
+* Build the project with the following command
 
 ```
 mvn clean install
 ```
 
-2. Go to the target folder of oozie job submitted module
+* Go to the target folder of oozie job submitted module
 
 ```
 cd oozie-job-submitter/target
 ```
 
-3. Run the jar file
+* Run the jar file
 
 ```
 java -jar oozie-job-submitter-1.0-SNAPSHOT.jar
@@ -24,8 +24,8 @@ java -jar oozie-job-submitter-1.0-SNAPSHOT.jar
 
 Currently, submitting a oozie job is supported through Rest APIs.
 
-1. Place the workflow application in hdfs.
-2. (Optional) For callback support, make sure you have placed the oozie callback property. For example:
+* Place the workflow application in hdfs.
+* (Optional) For callback support, make sure you have placed the oozie callback property. For example:
 
 ```
 <property>
@@ -34,7 +34,7 @@ Currently, submitting a oozie job is supported through Rest APIs.
   </property>
 ```
 
-3. Invoke the REST API `/oozie/submit` with request method POST. 
+* Invoke the REST API `/oozie/submit` with request method POST. 
 
 ### POST /oozie/submit
 
@@ -48,8 +48,8 @@ Currently, submitting a oozie job is supported through Rest APIs.
 ```
 
 #### Parameters
-1. oozieUrl - The http/https url to your oozie cluster.
-2. xmlFileLocation - The location of your configuration.xml which you want to invoke the workflow with.
+* oozieUrl - The http/https url to your oozie cluster.
+* xmlFileLocation - The location of your configuration.xml which you want to invoke the workflow with.
 
-4. (Optional) If you want callbacks, you can use `/oozie/callback`. Currently this service only supports logging of callbacks.
+* (Optional) If you want callbacks, you can use `/oozie/callback`. Currently this service only supports logging of callbacks.
 
