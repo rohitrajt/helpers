@@ -7,5 +7,5 @@ interface OozieService {
 
     OozieSubmitResponse submitOozieJob(OozieSubmitJobRequest oozieSubmitJobRequest)
 
-    void handleCallback(String jobId)
+    void handleCallback(String jobId, String status)
 }

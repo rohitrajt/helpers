@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
@@ -18,10 +19,10 @@ class OozieController {
     OozieService oozieService
 
     @RequestMapping(value = "/callback", method = RequestMethod.GET)
-    void getCallBack() {
+    void getCallBack(@RequestParam(value = 'jobId') String jobId, @RequestParam(value = 'status') String status) {
         log.info("Oozie Controller - get Call back")
 
-        oozieService.handleCallback()
+        oozieService.handleCallback(jobId, status)
     }
 
     @RequestMapping(value = "/submit", method = RequestMethod.POST)

@@ -28,7 +28,7 @@ class OozieServiceImpl implements OozieService {
     }
 
     @Override
-    void handleCallback(String jobId) {
-
+    void handleCallback(String jobId, String status) {
+        log.info("\"method\"=\"handleCallBack\" \"message\"=\"Oozie job with id ${jobId} status : ${status}\"")
     }
 }
