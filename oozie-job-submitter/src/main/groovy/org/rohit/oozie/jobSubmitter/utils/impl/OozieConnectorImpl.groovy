@@ -25,12 +25,13 @@ class OozieConnectorImpl implements OozieConnector {
 
         log.info("\"method\"=\"submitJob\", \"message\"=\"job with id ${jobId} submitted\"")
 
-        WorkflowJob jobInfo = oozieClient.getJobInfo(jobId)
 
-        while(jobInfo.getStatus() ==  WorkflowJob.Status.RUNNING) {
+        while(oozieClient.getJobInfo(jobId).getStatus() ==  WorkflowJob.Status.RUNNING) {
             log.info("WOrkflow job with id ${jobId} running")
             Thread.sleep(10 * 1000)
         }
+
+        WorkflowJob jobInfo = oozieClient.getJobInfo(jobId)
 
         log.info("Worfklow job with id ${jobId} completed with status ${jobInfo.getStatus()}")
 
